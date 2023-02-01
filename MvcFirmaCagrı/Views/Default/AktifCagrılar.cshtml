@@ -7,6 +7,7 @@
 
 @*kenarlıklıbr tablo oluşturduk*@
 <h2>AktifCagrılar</h2>
+@*<h3>  Merhaba @ViewBag.m  </h3>*@
 <table class="table table-bordered">
     <tr>
         <th>Id</th>
@@ -21,7 +22,7 @@
             <td>@x.ID</td>
             <td>@x.Konu </td>           
             <td>@x.Tarih.</td>
-            <td><a href="#" class="btn btn-success">Düzenle</td>
+            <td><a href="/Default/cagrıgetir/@x.ID " class="btn btn-success">Düzenle</td>
             <td><a href="/Default/cagrıdetay/@x.ID/" class="btn btn-danger">Detaylar</td>
         </tr>
     }

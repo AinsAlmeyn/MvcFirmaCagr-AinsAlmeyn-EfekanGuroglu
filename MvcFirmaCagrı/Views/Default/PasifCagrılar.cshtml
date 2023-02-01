@@ -10,8 +10,7 @@
     <tr>
         <th>Id</th>
         <th>Konu</th>
-        <th>Tarih</th>
-       
+        <th>Tarih</th>      
         <th>Detaylar</th>
     </tr>
     @foreach (var x in Model)
@@ -19,9 +18,8 @@
         <tr>
             <td>@x.ID</td>
             <td>@x.Konu </td>
-            <td>@x.Tarih.</td>
-            
-            <td><a href="#" class="btn btn-danger">Detaylar</td>
+            <td>@x.Tarih.</td>           
+            <td><a href="/Default/cagrıdetay/@x.ID" class="btn btn-danger">Detaylar</td>
         </tr>
     }
 </table>
